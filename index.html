@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./img/favicon.ico" rel="shortcut icon" />
+    <title>Momentum</title>
+    
+    <link href="css/owfont-regular.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./script/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <div class="player">
+          <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+          <ul class="play-list"></ul>
+        </div>
+
+        <div class="weather">
+          <input type="text" class="city" />
+          <i class="weather-icon owf"></i>
+          <div class="temperature"></div>
+          <div class="weather-description"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container main">
+        <div class="time-date">
+          <p class="time"></p>
+          <p class="date"></p>
+        </div>
+        <div class="greeting">
+          <p class="greeting_time-of-day">night</p>
+          <input class="greeting_name" type="text" placeholder="[Ваше имя]" />
+        </div>
+
+        <div class="slider">
+          <img
+            class="img-slider"
+            id="slider-prev"
+            src="./img/slider-prev.svg"
+            alt="назад"
+          />
+          <img
+            class="img-slider"
+            id="slider-next"
+            src="./img/slider-next.svg"
+            alt="вперед"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container qoutes">
+        <img class="reload" src="./img/reload.svg" alt="reload" />
+        <div class="for-qoutes"></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@500;600;700;800&family=Montserrat+Alternates:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 480px;
+  max-height: 100vh;
+  text-align: center;
+  background: rosybrown;
+  background-blend-mode: multiply;
+  transition: background-image 1s ease-in-out;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: beige;
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 30vh;
+  min-height: 220px;
+  padding: 20px;
+}
+
+header {
+  margin-top: 20px;
+}
+header .weather {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 24px;
+  min-height: 180px;
+  text-align: left;
+}
+header .weather i {
+  font-size: 44px;
+  margin-right: 11%;
+}
+header .weather .city {
+  width: 80%;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  color: beige;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+header .weather .temperature {
+  margin-right: 11%;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  margin-bottom: 28px;
+}
+
+.play-list {
+  text-align: left;
+}
+
+.play-item {
+  position: relative;
+  padding: 5px;
+  padding-left: 20px;
+  list-style: none;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.play-item:hover {
+  opacity: 1;
+}
+
+.play-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-weight: 900;
+}
+
+.item-active::before {
+  color: #C5B358;
+}
+
+.player-icon,
+.slider-icon,
+.change-quote {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.player-icon:hover,
+.slider-icon:hover,
+.change-quote:hover {
+  opacity: 1;
+}
+
+.player-icon:active,
+.slider-icon:active,
+.reload:active {
+  border: 0;
+  outline: 0;
+  transform: scale(1.1);
+}
+
+.play {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-image: url("../img/play.svg");
+}
+
+.pause {
+  background-image: url("../img/pause.svg");
+}
+
+.play-prev {
+  background-image: url("../img/play-prev.svg");
+}
+
+.play-next {
+  background-image: url("../img/play-next.svg");
+}
+
+.img-slider {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#slider-prev {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+#slider-next {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  min-height: 260px;
+  padding: 20px;
+}
+main .time-date {
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+main .time-date .time {
+  margin-bottom: 20px;
+  font-size: 58px;
+  font-weight: 600;
+}
+main .time-date .date {
+  font-size: 28px;
+  font-weight: 500;
+}
+main .greeting {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  min-height: 48px;
+  font-size: 28px;
+  font-weight: 500;
+}
+main .greeting_time-of-day {
+  flex: 1;
+  padding: 10px;
+  text-align: right;
+}
+main .greeting_name {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  font-size: 28px;
+  color: beige;
+  background-color: transparent;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.qoutes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  min-height: 160px;
+  padding: 20px;
+}
+
+.reload {
+  cursor: pointer;
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.for-qoutes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}/*# sourceMappingURL=style.css.map */
