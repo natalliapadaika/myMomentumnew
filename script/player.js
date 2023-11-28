@@ -4,7 +4,7 @@ let isPlay = false;
 
 const audio = new Audio();
 
-import playList from "../script/play-list.js";
+import playList from "./play-list.js";
 
 export { playList };
 
